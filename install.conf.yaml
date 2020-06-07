@@ -6,6 +6,7 @@
 
 - link:
     ~/.dotfiles: ""
+    ~/.zshrc: zshrc
 
 - create:
     - ~/downloads
