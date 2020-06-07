@@ -5,6 +5,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+source ~/.shell/doctolib.sh
+
 # PATH
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 
@@ -123,20 +125,3 @@ bindkey '^[OB' history-substring-search-down
 # nvm
 export NVM_DIR="$HOME/.nvm"
 . "$NVM_DIR/nvm.sh"
-
-# DOCTOLIB SPECIFIC STUFF
-
-# Doctolib utils
-DOCTOLIB_ROOT=~/git/doctolib
-DOCTOLIB_UTILS=~/git/misc/bash-utils
-
-source "$DOCTOLIB_UTILS/doctolib-utils.sh"
-
-# Flaky detector alias
-fl-det() {
-  classline=$(cat $1 | grep '^\s*class.*$')
-  classname=$(echo "$classline" | cut -d ' ' -f 2)
-  testname=$(awk NR==$2 $1 | sed -E -e "s/[[:space:]']+/_/g" -e 's/^_*it/test/' -e 's/_do$//')
-  rake "ci:run_flaky_detector[$classname,$testname]"
-}
-
