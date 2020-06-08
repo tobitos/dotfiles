@@ -8,6 +8,7 @@
     ~/.dotfiles: ""
     ~/.zshrc:
     ~/.shell:
+    ~/Brewfile: Brewfile
 
 - create:
     - ~/downloads
