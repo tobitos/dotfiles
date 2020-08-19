@@ -13,4 +13,16 @@ flaky() {
 }
 
 alias pug-prs="open https://github.com/doctolib/doctolib/pulls?q=is%3Apr+is%3Aopen+label%3APUG"
-alias pug-board="open https://doctolib.atlassian.net/secure/RapidBoard.jspa?rapidView=201&projectKey=PUG"
+alias pug-board="open https://doctolib.atlassian.net/secure/RapidBoard.jspa?rapidView=201"
+alias pug-sum="open https://meet.google.com/dww-jwcm-ymn"
+alias pug-roadmap="open https://app.asana.com/0/1182156501341633/timeline"
+
+alias hk-prs="open https://github.com/doctolib/doctolib/pulls?q=is%3Apr+is%3Aopen+label%3AEHR-HOUSE-KEEPING"
+alias hk-board="open https://doctolib.atlassian.net/secure/RapidBoard.jspa?rapidView=181"
+
+alias docto-roadmap="open https://app.asana.com/0/1128106467701334/timeline"
+
+alias daniel11="open https://app.asana.com/0/1174675981378074/list"
+
+alias get-structure-sql="git checkout $(git merge-base origin/master HEAD) -- db/structure.sql"
+alias docto-start="docker-compose start && rails s -u thin -b 127.0.0.1"
