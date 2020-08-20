@@ -26,3 +26,4 @@ alias daniel11="open https://app.asana.com/0/1174675981378074/list"
 
 alias get-structure-sql="git checkout $(git merge-base origin/master HEAD) -- db/structure.sql"
 alias docto-start="docker-compose start && rails s -u thin -b 127.0.0.1"
+alias docto-workers="bundle exec rake resque:work"
