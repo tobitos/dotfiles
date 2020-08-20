@@ -127,3 +127,5 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # nvm
 export NVM_DIR="$HOME/.nvm"
 . "$NVM_DIR/nvm.sh"
+
+eval $(thefuck --alias)

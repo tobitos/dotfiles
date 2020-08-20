@@ -8,6 +8,8 @@ brew "zsh-syntax-highlighting"
 brew "zsh-autosuggestions"
 brew "zsh-history-substring-search"
 
+brew "thefuck"
+
 brew "sqlite"
 
 cask "google-chrome"
