@@ -121,6 +121,11 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# rbenv
+if command -v rbenv > /dev/null 2>&1; then
+  eval "$(rbenv init -)";
+fi
+
 # nvm
 export NVM_DIR="$HOME/.nvm"
 . "$NVM_DIR/nvm.sh"

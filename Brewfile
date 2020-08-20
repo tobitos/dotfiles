@@ -2,6 +2,7 @@ brew "romkatv/powerlevel10k/powerlevel10k"
 brew "git"
 brew "tldr"
 brew "yarn"
+brew "rbenv"
 
 brew "zsh"
 brew "zsh-syntax-highlighting"
