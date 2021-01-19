@@ -6,6 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 source ~/.shell/doctolib.sh
+source ~/.shell/bookmarks.sh
 
 # PATH
 export PATH="/usr/local/opt/ruby/bin:$PATH"

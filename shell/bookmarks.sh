@@ -1,0 +1,2 @@
+alias covid="open 'https://ig.ft.com/coronavirus-chart/?areas=fra&areas=deu&areas=prt&areas=esp&areas=swe&areasRegional=usny&areasRegional=usca&areasRegional=usfl&areasRegional=ustx&cumulative=0&logScale=0&per100K=1&startDate=2020-03-11&values=deaths'"
+alias expenses="open https://docs.google.com/spreadsheets/d/1Beu8KanmxO31ppcLkCGGgvK9RC4QaEIh1wcljJpaJrw/edit#gid=1014766057"
